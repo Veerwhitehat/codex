@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become a Seller | Karigar Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell simple-page">
+      <header class="top-header">
+        <a class="brand" href="index.html">Karigar Connect</a>
+        <div class="header-actions">
+          <a class="cart-chip" href="products.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+          <button class="menu-button" data-menu-toggle aria-label="Open menu">☰</button>
+        </div>
+      </header>
+
+      <aside class="side-menu" data-side-menu>
+        <nav>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </aside>
+      <div class="menu-backdrop" data-menu-toggle></div>
+
+      <main class="content-card">
+        <h1>Become a Seller</h1>
+        <form data-form-toast="Application submitted! We'll contact you soon.">
+          <label>Artisan / Workshop Name<input type="text" name="workshop" required /></label>
+          <label>Phone Number<input type="tel" name="phone" required /></label>
+          <label>Craft Category
+            <select name="category" required>
+              <option value="">Select one</option>
+              <option>Textiles</option>
+              <option>Pottery</option>
+              <option>Jewelry</option>
+              <option>Woodwork</option>
+            </select>
+          </label>
+          <label>Tell your story<textarea name="story" rows="4" required></textarea></label>
+          <button class="primary-btn full" type="submit">Submit Application</button>
+        </form>
+      </main>
+
+      <nav class="bottom-nav">
+        <a href="index.html">🏠<span>Home</span></a>
+        <a href="products.html">🧶<span>Artisans</span></a>
+        <a href="products.html">🛒<span>Cart</span></a>
+      </nav>
+    </div>
+    <div class="toast-host" data-toast-host></div>
+    <script src="app.js"></script>
+  </body>
+</html>
