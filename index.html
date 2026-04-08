@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karigar Connect | Mumbai Maker's Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="top-header">
+        <a class="brand" href="index.html">Karigar Connect</a>
+        <div class="header-actions">
+          <button class="compact-cta" data-toast="Start exploring artisan stories">Explore</button>
+          <a class="cart-chip" href="products.html">
+            Cart <span class="cart-count" data-cart-count>0</span>
+          </a>
+          <button class="menu-button" data-menu-toggle aria-label="Open menu">☰</button>
+        </div>
+      </header>
+
+      <aside class="side-menu" data-side-menu>
+        <nav>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="seller.html">Become a Seller</a>
+          <a href="products.html">Products</a>
+        </nav>
+      </aside>
+      <div class="menu-backdrop" data-menu-toggle></div>
+
+      <main>
+        <section class="hero-card">
+          <img
+            src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=1600&q=80"
+            alt="Meera Bai weaving silk in Mumbai"
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="logo-stack">MUMBAI<br />MAKER'S<br />COLLECTIVE</p>
+            <h1>
+              <span class="script">Handmade</span> in Mumbai.<br />Delivered to You.
+            </h1>
+            <a href="products.html" class="primary-btn">Explore the Stories</a>
+          </div>
+        </section>
+
+        <section class="split-product">
+          <article class="story-panel">
+            <h2>The Maker's Story</h2>
+            <img
+              class="feature-story"
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80"
+              alt="Meera Bai at loom"
+            />
+            <h3>Raw materials</h3>
+            <div class="raw-grid">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?auto=format&fit=crop&w=600&q=80" alt="Silk fibers" />
+              <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=600&q=80" alt="Natural dyes" />
+              <img src="https://images.unsplash.com/photo-1610189721866-31fce1d3f5cc?auto=format&fit=crop&w=600&q=80" alt="Material palette" />
+            </div>
+            <div class="badge-box">
+              <p><strong>MEERA BAI</strong> — Mumbai's Textile Visionary. Crafting for 40 years.</p>
+            </div>
+          </article>
+
+          <article class="product-panel">
+            <img
+              class="product-image"
+              src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=900&q=80"
+              alt="Woven silk scarf Lotus Bloom"
+            />
+            <h2>Woven Silk Scarf 'Lotus Bloom' by Meera Bai</h2>
+            <p class="price">$78.00</p>
+            <p>
+              Handwoven on traditional looms in Mumbai with organic dyes and ethically sourced silk.
+            </p>
+            <button class="primary-btn full" data-add-to-cart>Add to Cart</button>
+            <button class="secondary-btn full" data-toast="Saved to favorites">Save to Favorites</button>
+          </article>
+        </section>
+      </main>
+
+      <nav class="bottom-nav">
+        <a href="index.html" class="active">🏠<span>Home</span></a>
+        <a href="products.html">🧶<span>Artisans</span></a>
+        <a href="products.html">🛒<span>Cart</span></a>
+      </nav>
+    </div>
+    <div class="toast-host" data-toast-host></div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Karigar Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell simple-page">
+      <header class="top-header">
+        <a class="brand" href="index.html">Karigar Connect</a>
+        <div class="header-actions">
+          <a class="cart-chip" href="products.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+          <button class="menu-button" data-menu-toggle aria-label="Open menu">☰</button>
+        </div>
+      </header>
+
+      <aside class="side-menu" data-side-menu>
+        <nav>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="seller.html">Become a Seller</a>
+        </nav>
+      </aside>
+      <div class="menu-backdrop" data-menu-toggle></div>
+
+      <main class="content-card">
+        <h1>Contact Us</h1>
+        <form data-form-toast="Message sent successfully!">
+          <label>Full Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="primary-btn full" type="submit">Send Message</button>
+        </form>
+      </main>
+
+      <nav class="bottom-nav">
+        <a href="index.html">🏠<span>Home</span></a>
+        <a href="products.html">🧶<span>Artisans</span></a>
+        <a href="products.html">🛒<span>Cart</span></a>
+      </nav>
+    </div>
+    <div class="toast-host" data-toast-host></div>
+    <script src="app.js"></script>
+  </body>
+</html>
